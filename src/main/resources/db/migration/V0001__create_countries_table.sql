@@ -1,5 +1,4 @@
 CREATE TABLE "countries" (
-    "id"                       UUID        NOT NULL DEFAULT uuid_generate_v4() CONSTRAINT "countries_primary_key" PRIMARY KEY,
     "name"                     VARCHAR     NOT NULL UNIQUE,
     "alpha_2"                  VARCHAR(2)  NOT NULL UNIQUE,
     "alpha_3"                  VARCHAR(3)  NOT NULL UNIQUE,
